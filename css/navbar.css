@@ -1,0 +1,63 @@
+body	{ width: 80%; padding:1%; margin:0 auto; font-family:Calibri, sans-serif; }
+#nav{
+    border:5px solid rgb(56, 77, 197);
+    border-width:1px 0;
+    list-style: none;
+    margin:0;
+    padding:2%;
+    text-align:center;
+    background: rgba(206, 111, 111, 0.637);
+}
+#nav li{
+    position:relative;
+    display: inline-block;
+    width: 15%;
+}
+#nav a{
+    display:inline-block;
+    padding:10px;
+}
+#nav ul{
+    position:absolute;
+    /*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
+    left:-9999px;
+    margin:0;
+    padding:0;
+    text-align:left;
+}
+#nav ul li{
+    display:block;
+    background: rgba(206, 111, 111, 0.637);
+    overflow: visible;
+}
+#nav li:hover ul{
+    left:0;
+}
+#nav li:hover a{
+    text-decoration:underline;
+}
+#nav li:hover ul a{
+    text-decoration:none;
+    background: rgba(206, 111, 111, 0.637);
+}
+#nav li:hover ul a:hover{
+    text-decoration:underline;
+}
+#nav ul a{
+    white-space:nowrap;
+    display:block;
+    border-bottom:1px solid #ccc;
+}
+a{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    font-weight:bold;
+}
+a:hover{
+    text-decoration:underline;
+    background:rgba(248, 248, 248, 0.459);
+}
+
+.active {
+    background-color: #ccc;
+}
