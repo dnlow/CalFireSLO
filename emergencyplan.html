@@ -10,6 +10,11 @@
     <meta name="description" content="">
     <meta name="author" content="Dane Low">
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/js/emergencyplans.js"></script>
     <title>Emergency Planning</title>
 
     <!-- Bootstrap core CSS -->
@@ -17,7 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
-
+    
   </head>
 
   <body>
@@ -106,6 +111,31 @@
         <li class="breadcrumb-item active">Emergency Planning</li>
       </ol>
 
+      <div class="row"> 
+        <div class="col">
+          <hr class="page-section-break">
+          <h4>Emergency Type</h4>
+          <button id="earthquake" onclick="showPlan(this.id)">Earthquake</button>
+          <button id="evacuation" onclick="showPlan(this.id)">evacuation</button>
+          <button id="fire" onclick="showPlan(this.id)">fire</button>
+          <button id="hazmat" onclick="showPlan(this.id)">hazmat</button>
+          <button id="nopower" onclick="showPlan(this.id)">nopower</button>
+          <button id="pets" onclick="showPlan(this.id)">pets</button>
+          <br><button id="radiation" onclick="showPlan(this.id)">radiation</button>
+          <button id="stormflooding" onclick="showPlan(this.id)">stormflooding</button>
+          <button id="terror" onclick="showPlan(this.id)">terror</button>
+          <button id="tsunami" onclick="showPlan(this.id)">tsunami</button>
+          <button id="shelter" onclick="showPlan(this.id)">shelter</button>
+          <button id="sirens" onclick="showPlan(this.id)">sirens</button>
+          <hr class="page-section-break">
+        </div>
+        
+      </div>
+
+      <div class="row" id="information_container">
+        
+      </div>
+
     </div>
     <!-- /.container -->
 
@@ -117,10 +147,7 @@
         <!-- /.container -->
       </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    
   </body>
 
 </html>
